@@ -23,7 +23,6 @@
     //创建模型文件    相当于一个数据库的表
     //添加实体   一张表
     //创建实体类   相当于模型
-    
     //获取上下文
     NSManagedObjectContext *context = [[NSManagedObjectContext alloc] init];
     //上下文关联数据库
@@ -45,7 +44,7 @@
 - (IBAction)addEmployee:(id)sender {
     Employee *employee = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:_context];
     employee.name = @"wangwu";
-    employee.height = @1.75;
+    employee.height = @1.70;
     employee.birthday = [NSDate date];
     
     NSError *error = nil;
